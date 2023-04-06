@@ -1,4 +1,4 @@
-'''
+
 import flet as ft
 import os, openai
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -55,7 +55,7 @@ def main(page: ft.Page):
 
     page.add(txt_name, ft.ElevatedButton("Generate!", on_click=btn_click))
 
-flet.app(target=main, view=None, port=8502)
+ft.app(target=main, view=None, port=8502)
 '''
 
 import flet
@@ -89,4 +89,5 @@ def main(page: Page):
 #flet.app(target=main)
 #flet.app(target=main, view=flet.WEB_BROWSER) 
 flet.app(target=main, view=None, port=8502)
+'''
 
